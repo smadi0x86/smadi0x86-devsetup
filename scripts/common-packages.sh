@@ -22,6 +22,7 @@ sudo apt install -y \
     zip \
     neofetch \
     dnsutils \
-    net-tools
+    net-tools \
+    wireless-tools
 
 echo "[+] Common tools installation completed!"
