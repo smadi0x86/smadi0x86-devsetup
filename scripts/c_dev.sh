@@ -15,7 +15,8 @@ sudo apt install -y \
     g++-multilib \
     libc6-dev \
     libstdc++-12-dev \
-    libclang-dev
+    libclang-dev \
+    nasm
 
 # Ninja build system
 sudo apt install -y ninja-build
