@@ -10,6 +10,6 @@ git pull origin main
 git submodule update --remote --merge
 
 # Stow the dotfiles
-./stow.sh
+./scripts/stow.sh
 
 echo "[+] Sync complete!"
