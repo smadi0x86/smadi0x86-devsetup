@@ -1,7 +1,7 @@
 # smadi0x86 Development Setup
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/fb00a6c1-86e7-472e-91f6-fc3fadcb5c2d" alt="Centered Image" />
+<img src="https://github.com/user-attachments/assets/8c060ff3-9867-4a89-96f7-eb0260af6b9f" alt="Debian Logo" />
 </div>
 
 This repository automates the installation and configuration of my personal development environment on Debian-based systems (Ubuntu, WSL, Debian 12). It includes essential tools, configurations, and dotfiles managed using GNU Stow and Git submodules.
