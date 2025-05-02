@@ -13,6 +13,9 @@
 (load-file "~/.emacs.rc/misc-rc.el")         ; Load misc config
 (load-file custom-file)                      ; Load theme, variables, etc.
 
+(require 'package) ; Loads built-in package manager
+;(Package-initialize) ; Older versions of emacs
+
 ;; -------------------------
 ;; Basic UI Settings
 ;; -------------------------
