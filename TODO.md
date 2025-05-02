@@ -1,2 +1,0 @@
-- Make sure to backup old tmux, nvim folders with *.old postfix
-- When I setted up nvim, it did STOW symbolic link to .config/nvim but its a file not a folder so nvim didnt work as expected, make sure to copy the folder itself too so it works (the issue is that the install.md doesnt run the scripts for packages/ folder which include tmux.sh and nvim.sh cloning)

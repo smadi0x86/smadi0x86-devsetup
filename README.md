@@ -2,6 +2,8 @@
 
 This repository automates the installation and configuration of my personal development environment on Debian-based systems (Ubuntu, WSL, Debian 12). It includes essential tools, configurations, and dotfiles managed using GNU Stow and Git submodules.
 
+If you're wondering why I have 2 text editors configs (emacs and nvim), I use nvim for fast file editing and emacs for bigger projects.
+
 ## Features
 
 - **Tmux**: Configured with my custom `.tmux.conf`.
