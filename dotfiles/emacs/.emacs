@@ -11,10 +11,9 @@
 
 (load-file "~/.emacs.rc/rc.el")              ; Load core config
 (load-file "~/.emacs.rc/misc-rc.el")         ; Load misc config
-(load-file custom-file)                      ; Load theme, variables, etc.
+(load "~/.emacs.rc/autocommit-rc.el")        ; Load autocommit config
 
-(require 'package) ; Loads built-in package manager
-;(Package-initialize) ; Older versions of emacs
+(load-file custom-file)                      ; Load theme, variables, etc.
 
 ;; -------------------------
 ;; Basic UI Settings
@@ -114,7 +113,10 @@
 ;; -------------------------
 
 (require 'simpc-mode)
-(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode)) ; Simpc for C/C++ files
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+
+(require 'fasm-mode)
+(add-to-list 'auto-mode-alist '("\\.asm\\'" . fasm-mode))
 
 ;; Require common programming modes
 (rc/require
@@ -131,6 +133,12 @@
  'php-mode
  'typescript-mode
  )
+
+
+;; Add a new error pattern for "file(line,col) Warning:" format
+(add-to-list 'compilation-error-regexp-alist
+             '("\\([a-zA-Z0-9\\.]+\\)(\\([0-9]+\\)\\(,\\([0-9]+\\)\\)?) \\(Warning:\\)?"
+               1 2 (4) (5)))
 
 ;; =========================
 ;; End of Config
